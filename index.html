@@ -1,98 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdulrahman Adi - IT Engineer & Web Developer</title>
-<meta name="description" content="Abdulrahman Adi - IT Engineer & Web Developer. Experienced in networking, web development, and system management.">
-<meta name="keywords" content="IT Engineer, Web Developer, Networking, HTML, CSS, JavaScript, WordPress">
-<meta name="author" content="Abdulrahman Adi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrahman Adi - IT Engineer & Web Developer</title>
+    <meta name="description" content="Abdulrahman Adi - IT Engineer & Web Developer. Experienced in networking, web development, and system management.">
+    <meta name="keywords" content="IT Engineer, Web Developer, Networking, HTML, CSS, JavaScript, WordPress">
+    <meta name="author" content="Abdulrahman Adi">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Abdulrahman Adi - IT Engineer & Web Developer">
-<meta property="og:description" content="Building modern websites and digital solutions.">
-<meta property="og:image" content="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
-<meta property="og:url" content="https://abdulrahmanadi.github.io">
-<meta property="og:type" content="website">
+    <!-- Open Graph (لتحسين المشاركة على الشبكات الاجتماعية مثل Facebook) -->
+    <meta property="og:title" content="Abdulrahman Adi - IT Engineer & Web Developer">
+    <meta property="og:description" content="Building modern websites and digital solutions.">
+    <meta property="og:image" content="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
+    <meta property="og:url" content="https://abdulrahmanadi.github.io">
+    <meta property="og:type" content="website">
 
-<style>
-body { margin:0; font-family:Arial,sans-serif; background:#0f172a; color:white; text-align:center; }
-nav { display:flex; justify-content:space-between; padding:20px; background:#020617; position:sticky; top:0; z-index:1000; }
-nav a { color:white; margin:0 10px; text-decoration:none; }
-nav a:hover { color:#3b82f6; }
-header { padding:100px 20px; }
-header img { border-radius:50%; width:150px; margin-bottom:20px; }
-header h1 { margin:10px 0 5px; }
-header p { margin:5px 0 20px; }
-.btn { background:#3b82f6; padding:10px 20px; border-radius:8px; color:white; text-decoration:none; margin:5px; display:inline-block; }
-.btn:hover { background:#2563eb; }
-section { padding:60px 20px; }
-.skills { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
-.skills div { background:#1e293b; padding:10px 20px; border-radius:20px; }
-.projects { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-.card { background:#1e293b; padding:15px; border-radius:10px; width:220px; transition:0.3s; }
-.card img { width:100%; border-radius:10px; }
-.card h3 { margin:10px 0 5px; }
-.card p { margin:0; }
-.card:hover { transform:translateY(-10px); }
-#contact p { margin:5px 0; }
-</style>
+    <style>
+        /* تنسيق عام للجسم مع الخلفية */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني للخلفية */
+            color: white;
+            text-align: center;
+        }
+
+        /* تنسيق شريط التنقل */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #020617;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* تنسيق الروابط في شريط التنقل */
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        /* تنسيق رأس الصفحة */
+        header {
+            padding: 100px 20px;
+        }
+
+        header img {
+            border-radius: 50%; /* جعل الصورة دائرية */
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+        }
+
+        header p {
+            margin: 5px 0 20px;
+        }
+
+        .btn {
+            background: #3b82f6;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        /* تنسيق الأقسام */
+        section {
+            padding: 60px 20px;
+        }
+
+        /* تنسيق قسم المهارات */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skills div {
+            background: #1e293b;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* تنسيق قسم المشاريع */
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* تنسيق البطاقات الخاصة بالمشاريع */
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        /* تأثيرات عند المرور بالماوس على بطاقة المشروع */
+        .card:hover {
+            transform: translateY(-10px); /* رفع البطاقة قليلاً */
+        }
+
+        /* تنسيق قسم الاتصال */
+        #contact p {
+            margin: 5px 0;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<nav>
-<h2>Abdulrahman Adi</h2>
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+    <!-- شريط التنقل -->
+    <nav>
+        <h2>Abdulrahman Adi</h2> <!-- اسم المستخدم في الشريط -->
+        <div>
+            <a href="#about">About</a> <!-- رابط للقسم "عنّي" -->
+            <a href="#skills">Skills</a> <!-- رابط للقسم "المهارات" -->
+            <a href="#projects">Projects</a> <!-- رابط للقسم "المشاريع" -->
+            <a href="#contact">Contact</a> <!-- رابط للقسم "التواصل" -->
+        </div>
+    </nav>
 
-<header>
-<img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg" alt="Profile picture of Abdulrahman Adi">
-<h1>Abdulrahman Adi</h1>
-<p>IT Engineer | Web Developer</p>
-<a href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
-<a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
-</header>
+    <!-- رأس الصفحة مع صورة شخصية وروابط -->
+    <header>
+        <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg" alt="Profile picture of Abdulrahman Adi">
+        <h1>Abdulrahman Adi</h1>
+        <p>IT Engineer | Web Developer</p>
+        <a href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
+        <a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
+    </header>
 
-<section id="about">
-<h2>About Me</h2>
-<p>IT Engineer with experience in networking, technical support, and system management. Passionate about building modern websites and digital solutions.</p>
-</section>
+    <!-- قسم "عنّي" -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>IT Engineer with experience in networking, technical support, and system management. Passionate about building modern websites and digital solutions.</p>
+    </section>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills">
-<div>HTML</div><div>CSS</div><div>JavaScript</div><div>WordPress</div><div>Networking</div><div>Windows Server</div><div>Photoshop</div>
-</div>
-</section>
+    <!-- قسم المهارات -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>WordPress</div>
+            <div>Networking</div>
+            <div>Windows Server</div>
+            <div>Photoshop</div>
+        </div>
+    </section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="projects">
-<div class="card">
-<img src="https://via.placeholder.com/200" alt="Educational Platform project">
-<h3>Educational Platform</h3>
-<p>Online learning system for students</p>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/200" alt="IT Management System project">
-<h3>IT Management System</h3>
-<p>Network and system management</p>
-</div>
-</div>
-</section>
+    <!-- قسم المشاريع -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563373192-b0b90ec73f9e" alt="Educational Platform project"> <!-- صورة مناسبة للمشروع -->
+                <h3>Educational Platform</h3>
+                <p>Online learning system for students</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583244040842-c0346590e439" alt="IT Management System project"> <!-- صورة مناسبة للمشروع -->
+                <h3>IT Management System</h3>
+                <p>Network and system management</p>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
-<h2>Contact Me</h2>
-<p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
-<p>WhatsApp: <a href="https://wa.me/963991904972" style="color:#3b82f6;">+963991904972</a></p>
-</section>
+    <!-- قسم الاتصال -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/963991904972" style="color:#3b82f6;">+963991904972</a></p>
+    </section>
 
 </body>
+
 </html>
