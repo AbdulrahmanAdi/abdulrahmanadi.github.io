@@ -9,7 +9,7 @@
     <meta name="keywords" content="IT Engineer, Web Developer, Networking, HTML, CSS, JavaScript, WordPress">
     <meta name="author" content="Abdulrahman Adi">
 
-    <!-- Open Graph (لتحسين المشاركة على الشبكات الاجتماعية مثل Facebook) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Abdulrahman Adi - IT Engineer & Web Developer">
     <meta property="og:description" content="Building modern websites and digital solutions.">
     <meta property="og:image" content="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
@@ -17,16 +17,14 @@
     <meta property="og:type" content="website">
 
     <style>
-        /* تنسيق عام للجسم مع الخلفية */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني للخلفية */
+            background: #0f172a;
             color: white;
             text-align: center;
         }
 
-        /* تنسيق شريط التنقل */
         nav {
             display: flex;
             justify-content: space-between;
@@ -37,7 +35,6 @@
             z-index: 1000;
         }
 
-        /* تنسيق الروابط في شريط التنقل */
         nav a {
             color: white;
             margin: 0 10px;
@@ -48,13 +45,12 @@
             color: #3b82f6;
         }
 
-        /* تنسيق رأس الصفحة */
         header {
             padding: 100px 20px;
         }
 
         header img {
-            border-radius: 50%; /* جعل الصورة دائرية */
+            border-radius: 50%;
             width: 150px;
             margin-bottom: 20px;
         }
@@ -81,12 +77,10 @@
             background: #2563eb;
         }
 
-        /* تنسيق الأقسام */
         section {
             padding: 60px 20px;
         }
 
-        /* تنسيق قسم المهارات */
         .skills {
             display: flex;
             justify-content: center;
@@ -100,7 +94,6 @@
             border-radius: 20px;
         }
 
-        /* تنسيق قسم المشاريع */
         .projects {
             display: flex;
             justify-content: center;
@@ -108,7 +101,6 @@
             flex-wrap: wrap;
         }
 
-        /* تنسيق البطاقات الخاصة بالمشاريع */
         .card {
             background: #1e293b;
             padding: 15px;
@@ -130,12 +122,10 @@
             margin: 0;
         }
 
-        /* تأثيرات عند المرور بالماوس على بطاقة المشروع */
         .card:hover {
-            transform: translateY(-10px); /* رفع البطاقة قليلاً */
+            transform: translateY(-10px);
         }
 
-        /* تنسيق قسم الاتصال */
         #contact p {
             margin: 5px 0;
         }
@@ -145,18 +135,18 @@
 
 <body>
 
-    <!-- شريط التنقل -->
+    <!-- Navigation bar -->
     <nav>
-        <h2>Abdulrahman Adi</h2> <!-- اسم المستخدم في الشريط -->
+        <h2>Abdulrahman Adi</h2>
         <div>
-            <a href="#about">About</a> <!-- رابط للقسم "عنّي" -->
-            <a href="#skills">Skills</a> <!-- رابط للقسم "المهارات" -->
-            <a href="#projects">Projects</a> <!-- رابط للقسم "المشاريع" -->
-            <a href="#contact">Contact</a> <!-- رابط للقسم "التواصل" -->
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- رأس الصفحة مع صورة شخصية وروابط -->
+    <!-- Header section with profile image and links -->
     <header>
         <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg" alt="Profile picture of Abdulrahman Adi">
         <h1>Abdulrahman Adi</h1>
@@ -165,13 +155,13 @@
         <a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
     </header>
 
-    <!-- قسم "عنّي" -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>IT Engineer with experience in networking, technical support, and system management. Passionate about building modern websites and digital solutions.</p>
     </section>
 
-    <!-- قسم المهارات -->
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills">
@@ -185,24 +175,24 @@
         </div>
     </section>
 
-    <!-- قسم المشاريع -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1563373192-b0b90ec73f9e" alt="Educational Platform project"> <!-- صورة مناسبة للمشروع -->
+                <img src="https://via.placeholder.com/200" alt="Educational Platform project">
                 <h3>Educational Platform</h3>
                 <p>Online learning system for students</p>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1583244040842-c0346590e439" alt="IT Management System project"> <!-- صورة مناسبة للمشروع -->
+                <img src="https://via.placeholder.com/200" alt="IT Management System project">
                 <h3>IT Management System</h3>
                 <p>Network and system management</p>
             </div>
         </div>
     </section>
 
-    <!-- قسم الاتصال -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
