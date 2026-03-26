@@ -4,32 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdulrahman Adi - IT Engineer & Web Developer</title>
-    <meta name="description" content="Abdulrahman Adi - IT Engineer & Web Developer. Experienced in networking, web development, and system management.">
-    <meta name="keywords" content="IT Engineer, Web Developer, Networking, HTML, CSS, JavaScript, WordPress">
-    <meta name="author" content="Abdulrahman Adi">
+    <title>Abdulrahman Adi | IT Engineer</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Abdulrahman Adi - IT Engineer & Web Developer">
-    <meta property="og:description" content="Building modern websites and digital solutions.">
-    <meta property="og:image" content="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
-    <meta property="og:url" content="https://abdulrahmanadi.github.io">
-    <meta property="og:type" content="website">
+    <!-- SEO -->
+    <meta name="description" content="IT Engineer & Web Developer building modern and fast websites.">
+
+    <!-- Google Font (احترافي أكثر من Arial) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: #0f172a;
             color: white;
             text-align: center;
         }
 
+        /* NAVBAR */
         nav {
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            background: #020617;
+            background: rgba(2,6,23,0.8);
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -45,24 +43,33 @@
             color: #3b82f6;
         }
 
+        /* HEADER احترافي */
         header {
-            padding: 100px 20px;
+            padding: 120px 20px;
+            background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+            url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+            background-size: cover;
+            background-position: center;
         }
 
         header img {
             border-radius: 50%;
             width: 150px;
             margin-bottom: 20px;
+            border: 3px solid #3b82f6;
         }
 
         header h1 {
-            margin: 10px 0 5px;
+            font-size: 40px;
+            margin: 10px 0;
         }
 
         header p {
-            margin: 5px 0 20px;
+            font-size: 18px;
+            opacity: 0.9;
         }
 
+        /* BUTTON */
         .btn {
             background: #3b82f6;
             padding: 10px 20px;
@@ -71,16 +78,19 @@
             text-decoration: none;
             margin: 5px;
             display: inline-block;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background: #2563eb;
+            transform: scale(1.05);
         }
 
         section {
             padding: 60px 20px;
         }
 
+        /* SKILLS */
         .skills {
             display: flex;
             justify-content: center;
@@ -94,6 +104,7 @@
             border-radius: 20px;
         }
 
+        /* PROJECTS */
         .projects {
             display: flex;
             justify-content: center;
@@ -104,9 +115,10 @@
         .card {
             background: #1e293b;
             padding: 15px;
-            border-radius: 10px;
-            width: 220px;
-            transition: 0.3s;
+            border-radius: 12px;
+            width: 240px;
+            transition: 0.4s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
         .card img {
@@ -114,30 +126,37 @@
             border-radius: 10px;
         }
 
-        .card h3 {
-            margin: 10px 0 5px;
-        }
-
-        .card p {
-            margin: 0;
-        }
-
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px) scale(1.03);
         }
 
         #contact p {
             margin: 5px 0;
         }
-    </style>
 
+        /* MOBILE */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            header {
+                padding: 80px 20px;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
+    <!-- NAV -->
     <nav>
-        <h2>Abdulrahman Adi</h2>
+        <h2>Abdulrahman</h2>
         <div>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -146,22 +165,23 @@
         </div>
     </nav>
 
-    <!-- Header section with profile image and links -->
+    <!-- HEADER -->
     <header>
-        <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg" alt="Profile picture of Abdulrahman Adi">
+        <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
         <h1>Abdulrahman Adi</h1>
-        <p>IT Engineer | Web Developer</p>
+        <p>I build fast, modern websites & IT solutions</p>
+
         <a href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
         <a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
     </header>
 
-    <!-- About Me Section -->
+    <!-- ABOUT -->
     <section id="about">
         <h2>About Me</h2>
-        <p>IT Engineer with experience in networking, technical support, and system management. Passionate about building modern websites and digital solutions.</p>
+        <p>IT Engineer specialized in networking, system management, and web development.</p>
     </section>
 
-    <!-- Skills Section -->
+    <!-- SKILLS -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills">
@@ -171,30 +191,32 @@
             <div>WordPress</div>
             <div>Networking</div>
             <div>Windows Server</div>
-            <div>Photoshop</div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- PROJECTS -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
+
             <div class="card">
-                <img src="https://via.placeholder.com/200" alt="Educational Platform project">
+                <img src="https://images.unsplash.com/photo-1584697964403-ccf7f1c9c1e7">
                 <h3>Educational Platform</h3>
-                <p>Online learning system for students</p>
+                <p>Online learning system</p>
             </div>
+
             <div class="card">
-                <img src="https://via.placeholder.com/200" alt="IT Management System project">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
                 <h3>IT Management System</h3>
-                <p>Network and system management</p>
+                <p>System & network management</p>
             </div>
+
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
         <p>WhatsApp: <a href="https://wa.me/963991904972" style="color:#3b82f6;">+963991904972</a></p>
     </section>
