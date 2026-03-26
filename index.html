@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdulrahman Adi | IT Engineer</title>
-    <meta name="description" content="IT Engineer & Web Developer building modern and fast websites.">
+
+    <!-- خط جميل -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- مكتبة الانيميشن -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* تنسيق عام للموقع */
+        /* =========================
+           إعدادات عامة للموقع
+        ========================= */
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif; /* خط حديث */
-            background: #0f172a; /* خلفية داكنة */
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a; /* خلفية داكنة احترافية */
             color: white;
-            text-align: center;
         }
 
+        /* =========================
+           شريط التنقل
+        ========================= */
         nav {
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            background: rgba(2,6,23,0.8); /* شفاف */
-            backdrop-filter: blur(10px); /* تأثير ضبابي */
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -40,39 +47,42 @@
             color: #3b82f6;
         }
 
+        /* =========================
+           الهيدر (الواجهة الرئيسية)
+        ========================= */
         header {
+            text-align: center;
             padding: 120px 20px;
-            background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
-            url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
             background-size: cover;
             background-position: center;
         }
 
         header img {
-            border-radius: 50%;
             width: 150px;
-            margin-bottom: 20px;
+            border-radius: 50%;
             border: 3px solid #3b82f6;
+            margin-bottom: 20px;
         }
 
         header h1 {
             font-size: 40px;
-            margin: 10px 0;
         }
 
         header p {
-            font-size: 18px;
             opacity: 0.9;
         }
 
+        /* زر */
         .btn {
-            background: #3b82f6;
+            display: inline-block;
             padding: 10px 20px;
-            border-radius: 8px;
+            background: #3b82f6;
             color: white;
             text-decoration: none;
+            border-radius: 8px;
             margin: 5px;
-            display: inline-block;
             transition: 0.3s;
         }
 
@@ -81,15 +91,20 @@
             transform: scale(1.05);
         }
 
+        /* =========================
+           الأقسام
+        ========================= */
         section {
             padding: 60px 20px;
+            text-align: center;
         }
 
+        /* المهارات */
         .skills {
             display: flex;
             justify-content: center;
-            gap: 10px;
             flex-wrap: wrap;
+            gap: 10px;
         }
 
         .skills div {
@@ -98,20 +113,27 @@
             border-radius: 20px;
         }
 
+        /* =========================
+           المشاريع
+        ========================= */
         .projects {
             display: flex;
             justify-content: center;
-            gap: 20px;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .card {
+            width: 250px;
             background: #1e293b;
-            padding: 15px;
             border-radius: 12px;
-            width: 240px;
-            transition: 0.4s;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            padding: 15px;
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
         }
 
         .card img {
@@ -119,17 +141,13 @@
             border-radius: 10px;
         }
 
-        .card:hover {
-            transform: translateY(-10px) scale(1.03);
-        }
-
-        #contact p {
-            margin: 5px 0;
-        }
-
+        /* =========================
+           الموبايل
+        ========================= */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
+                text-align: center;
             }
 
             header {
@@ -146,7 +164,9 @@
 
 <body>
 
-    <!-- شريط التنقل -->
+    <!-- =========================
+         شريط التنقل
+    ========================= -->
     <nav>
         <h2>Abdulrahman</h2>
         <div>
@@ -157,105 +177,104 @@
         </div>
     </nav>
 
-    <!-- الهيدر -->
+    <!-- =========================
+         الهيدر
+    ========================= -->
     <header data-aos="fade-up">
         <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
         <h1>Abdulrahman Adi</h1>
-        <p>I build fast, modern websites & IT solutions</p>
-        <a href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
-        <a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
+        <p>IT Engineer | Web Developer | Graphic Designer</p>
+
+        <a class="btn" href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view" target="_blank">
+            Download CV
+        </a>
+
+        <a class="btn" href="https://wa.me/963991904972" target="_blank">
+            WhatsApp
+        </a>
     </header>
 
-    <!-- قسم About -->
+    <!-- =========================
+         عني
+    ========================= -->
     <section id="about" data-aos="fade-right">
         <h2>About Me</h2>
-        <p>IT Engineer specialized in networking, system management, and web development.</p>
+        <p>I am an IT Engineer specialized in networking, systems, and web development.</p>
     </section>
 
-    <!-- قسم المهارات -->
+    <!-- =========================
+         المهارات
+    ========================= -->
     <section id="skills" data-aos="fade-left">
         <h2>Skills</h2>
         <div class="skills">
             <div>HTML</div>
             <div>CSS</div>
             <div>JavaScript</div>
-            <div>WordPress</div>
             <div>Networking</div>
             <div>Windows Server</div>
+            <div>WordPress</div>
+            <div>Photoshop</div>
+            <div>Illustrator</div>
         </div>
     </section>
 
-    <!-- قسم المشاريع -->
-<!-- قسم المشاريع -->
-<section id="projects" data-aos="zoom-in">
-    <h2>Projects</h2>
+    <!-- =========================
+         المشاريع
+    ========================= -->
+    <section id="projects" data-aos="zoom-in">
+        <h2>Projects</h2>
 
-    <div class="projects">
+        <div class="projects">
 
-        <!-- مشروع 1 -->
-        <div class="card" data-aos="flip-left" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1584697964403-ccf7f1c9c1e7">
-            <h3>Educational Platform</h3>
-            <p>Online learning system</p>
-        </div>
+            <!-- مشروع 1 -->
+            <div class="card" data-aos="flip-left">
+                <img src="https://images.unsplash.com/photo-1584697964403-ccf7f1c9c1e7">
+                <h3>Educational Platform</h3>
+                <p>Online learning system</p>
+            </div>
 
-        <!-- مشروع 2 -->
-        <div class="card" data-aos="flip-left" data-aos-delay="300">
-            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
-            <h3>IT Management System</h3>
-            <p>System & network management</p>
-        </div>
-
-        <!-- مشروع 3 -->
-        <div class="card" data-aos="flip-left" data-aos-delay="500">
-            <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960">
-            <h3>Photoshop Design</h3>
-            <p>Professional graphic design using Photoshop</p>
-        </div>
-
-        <!-- مشروع 4 -->
-        <div class="card" data-aos="flip-left" data-aos-delay="700">
-            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d">
-            <h3>Illustrator Design</h3>
-            <p>Vector logos and creative illustrations</p>
-        </div>
-
-    </div>
-</section>
-
-            <!-- مشروع 2: نظام إدارة تكنولوجيا المعلومات -->
-            <div class="card" data-aos="flip-left" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="IT Management System project">
+            <!-- مشروع 2 -->
+            <div class="card" data-aos="flip-left">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
                 <h3>IT Management System</h3>
-                <p>System & network management</p>
+                <p>Network & system management</p>
             </div>
 
-            <!-- مشروع 3: غرافيك ديزاين - فوتوشوب -->
-            <div class="card" data-aos="flip-left" data-aos-delay="500">
-                <img src="https://via.placeholder.com/200?text=Photoshop+Design" alt="Photoshop Graphic Design">
+            <!-- مشروع 3 -->
+            <div class="card" data-aos="flip-left">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766">
                 <h3>Photoshop Design</h3>
-                <p>Creative and professional design using Adobe Photoshop.</p>
+                <p>Creative graphic design</p>
             </div>
 
-            <!-- مشروع 4: غرافيك ديزاين - إلستريتور -->
-            <div class="card" data-aos="flip-left" data-aos-delay="700">
-                <img src="https://via.placeholder.com/200?text=Illustrator+Design" alt="Illustrator Graphic Design">
+            <!-- مشروع 4 -->
+            <div class="card" data-aos="flip-left">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d">
                 <h3>Illustrator Design</h3>
-                <p>Vector art and logos created with Adobe Illustrator.</p>
+                <p>Logo & vector design</p>
             </div>
 
         </div>
     </section>
 
-    <!-- قسم التواصل -->
+    <!-- =========================
+         التواصل
+    ========================= -->
     <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/963991904972" style="color:#3b82f6;">+963991904972</a></p>
+        <p>Email: it.abdulrahmanadi@gmail.com</p>
+        <p>WhatsApp: +963991904972</p>
     </section>
 
+    <!-- مكتبة الانيميشن -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             once: true
+        });
+    </script>
+
+</body>
+</html>
