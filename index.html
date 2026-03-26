@@ -2,22 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- إعداد الترميز ودعم اللغة -->
     <meta charset="UTF-8">
-
-    <!-- يجعل الموقع متجاوب مع الهاتف -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- عنوان الصفحة -->
     <title>Abdulrahman Adi | IT Engineer</title>
-
-    <!-- وصف الموقع لمحركات البحث -->
     <meta name="description" content="IT Engineer & Web Developer building modern and fast websites.">
-
-    <!-- خط احترافي من Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <!-- مكتبة الأنيميشن AOS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -30,19 +19,17 @@
             text-align: center;
         }
 
-        /* شريط التنقل العلوي */
         nav {
             display: flex;
             justify-content: space-between;
             padding: 20px;
             background: rgba(2,6,23,0.8); /* شفاف */
             backdrop-filter: blur(10px); /* تأثير ضبابي */
-            position: sticky; /* يبقى ثابت */
+            position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        /* روابط الناف بار */
         nav a {
             color: white;
             margin: 0 10px;
@@ -50,22 +37,17 @@
         }
 
         nav a:hover {
-            color: #3b82f6; /* لون عند المرور */
+            color: #3b82f6;
         }
 
-        /* قسم الهيدر */
         header {
             padding: 120px 20px;
-
-            /* خلفية احترافية مع صورة */
             background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
             url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
-
             background-size: cover;
             background-position: center;
         }
 
-        /* الصورة الشخصية */
         header img {
             border-radius: 50%;
             width: 150px;
@@ -73,19 +55,16 @@
             border: 3px solid #3b82f6;
         }
 
-        /* اسمك */
         header h1 {
             font-size: 40px;
             margin: 10px 0;
         }
 
-        /* الجملة التعريفية */
         header p {
             font-size: 18px;
             opacity: 0.9;
         }
 
-        /* الأزرار */
         .btn {
             background: #3b82f6;
             padding: 10px 20px;
@@ -97,18 +76,15 @@
             transition: 0.3s;
         }
 
-        /* تأثير عند المرور */
         .btn:hover {
             background: #2563eb;
             transform: scale(1.05);
         }
 
-        /* الأقسام */
         section {
             padding: 60px 20px;
         }
 
-        /* قسم المهارات */
         .skills {
             display: flex;
             justify-content: center;
@@ -116,14 +92,12 @@
             flex-wrap: wrap;
         }
 
-        /* كل مهارة */
         .skills div {
             background: #1e293b;
             padding: 10px 20px;
             border-radius: 20px;
         }
 
-        /* قسم المشاريع */
         .projects {
             display: flex;
             justify-content: center;
@@ -131,7 +105,6 @@
             flex-wrap: wrap;
         }
 
-        /* كرت المشروع */
         .card {
             background: #1e293b;
             padding: 15px;
@@ -141,58 +114,19 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
-        /* صورة المشروع */
         .card img {
             width: 100%;
             border-radius: 10px;
         }
 
-        /* حركة عند المرور */
         .card:hover {
             transform: translateY(-10px) scale(1.03);
         }
-<!-- قسم المشاريع -->
-<section id="projects" data-aos="zoom-in">
-    <h2>Projects</h2>
 
-    <div class="projects">
-
-        <!-- مشروع 1: منصة تعليمية -->
-        <div class="card" data-aos="flip-left" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1584697964403-ccf7f1c9c1e7" alt="Educational Platform project">
-            <h3>Educational Platform</h3>
-            <p>Online learning system</p>
-        </div>
-
-        <!-- مشروع 2: نظام إدارة تكنولوجيا المعلومات -->
-        <div class="card" data-aos="flip-left" data-aos-delay="300">
-            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="IT Management System project">
-            <h3>IT Management System</h3>
-            <p>System & network management</p>
-        </div>
-
-        <!-- مشروع 3: غرافيك ديزاين - فوتوشوب -->
-        <div class="card" data-aos="flip-left" data-aos-delay="500">
-            <img src="https://via.placeholder.com/200?text=Photoshop+Design" alt="Photoshop Graphic Design">
-            <h3>Photoshop Design</h3>
-            <p>Creative and professional design using Adobe Photoshop.</p>
-        </div>
-
-        <!-- مشروع 4: غرافيك ديزاين - إلستريتور -->
-        <div class="card" data-aos="flip-left" data-aos-delay="700">
-            <img src="https://via.placeholder.com/200?text=Illustrator+Design" alt="Illustrator Graphic Design">
-            <h3>Illustrator Design</h3>
-            <p>Vector art and logos created with Adobe Illustrator.</p>
-        </div>
-
-    </div>
-</section>
-        /* قسم التواصل */
         #contact p {
             margin: 5px 0;
         }
 
-        /* تصميم خاص للجوال */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -215,8 +149,6 @@
     <!-- شريط التنقل -->
     <nav>
         <h2>Abdulrahman</h2>
-
-        <!-- روابط التنقل داخل الصفحة -->
         <div>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -227,17 +159,9 @@
 
     <!-- الهيدر -->
     <header data-aos="fade-up">
-
-        <!-- الصورة الشخصية -->
         <img src="https://i.postimg.cc/F7wtSCT2/becc0796-7dbc-433e-85f7-e6b03439ac41.jpg">
-
-        <!-- الاسم -->
         <h1>Abdulrahman Adi</h1>
-
-        <!-- الوصف -->
         <p>I build fast, modern websites & IT solutions</p>
-
-        <!-- أزرار -->
         <a href="https://drive.google.com/file/d/1usFQvrZ9KnId0prQ210lT9OR5wZCDjKa/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
         <a href="https://wa.me/963991904972" class="btn">WhatsApp</a>
     </header>
@@ -251,7 +175,6 @@
     <!-- قسم المهارات -->
     <section id="skills" data-aos="fade-left">
         <h2>Skills</h2>
-
         <div class="skills">
             <div>HTML</div>
             <div>CSS</div>
@@ -265,21 +188,34 @@
     <!-- قسم المشاريع -->
     <section id="projects" data-aos="zoom-in">
         <h2>Projects</h2>
-
         <div class="projects">
 
-            <!-- مشروع 1 -->
+            <!-- مشروع 1: منصة تعليمية -->
             <div class="card" data-aos="flip-left" data-aos-delay="100">
-                <img src="https://unsplash.com/photos/person-using-macbook-pro-OGOWDVLbMSc">
+                <img src="https://images.unsplash.com/photo-1584697964403-ccf7f1c9c1e7" alt="Educational Platform project">
                 <h3>Educational Platform</h3>
                 <p>Online learning system</p>
             </div>
 
-            <!-- مشروع 2 -->
+            <!-- مشروع 2: نظام إدارة تكنولوجيا المعلومات -->
             <div class="card" data-aos="flip-left" data-aos-delay="300">
-                <img src="https://unsplash.com/photos/macbook-pro-showing-programming-language-xrVDYZRGdw4">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="IT Management System project">
                 <h3>IT Management System</h3>
                 <p>System & network management</p>
+            </div>
+
+            <!-- مشروع 3: غرافيك ديزاين - فوتوشوب -->
+            <div class="card" data-aos="flip-left" data-aos-delay="500">
+                <img src="https://via.placeholder.com/200?text=Photoshop+Design" alt="Photoshop Graphic Design">
+                <h3>Photoshop Design</h3>
+                <p>Creative and professional design using Adobe Photoshop.</p>
+            </div>
+
+            <!-- مشروع 4: غرافيك ديزاين - إلستريتور -->
+            <div class="card" data-aos="flip-left" data-aos-delay="700">
+                <img src="https://via.placeholder.com/200?text=Illustrator+Design" alt="Illustrator Graphic Design">
+                <h3>Illustrator Design</h3>
+                <p>Vector art and logos created with Adobe Illustrator.</p>
             </div>
 
         </div>
@@ -288,20 +224,12 @@
     <!-- قسم التواصل -->
     <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
-
         <p>Email: <a href="mailto:it.abdulrahmanadi@gmail.com" style="color:#3b82f6;">it.abdulrahmanadi@gmail.com</a></p>
         <p>WhatsApp: <a href="https://wa.me/963991904972" style="color:#3b82f6;">+963991904972</a></p>
     </section>
 
-    <!-- سكربت تشغيل الأنيميشن -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000, // سرعة الحركة
-            once: true // تشغيل مرة واحدة
-        });
-    </script>
-
-</body>
-
-</html>
+            duration: 1000,
+            once: true
